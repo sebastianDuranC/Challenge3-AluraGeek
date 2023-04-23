@@ -1,0 +1,210 @@
+#cuerpo {
+  width: 100%;
+  min-height: 1200px;
+  background-color: brown;
+}
+.footer {
+  width: 100%;
+  background-color: #eaf2fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .informacion__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  width: 10em;
+}
+.footer .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.informacion .informacion__enlaces {
+  text-decoration: none;
+  color: #464646;
+  margin: 0.5em 0.5em;
+  font-size: 0.9em;
+}
+
+.footer .footer__formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5em;
+  margin-bottom: 2em;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+form .formulario__input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.formulario__input-container .label__name {
+  position: absolute;
+  font-size: 0.95em;
+  top: 2.5em;
+  left: 0.5em;
+  color: #a2a2a2;
+}
+.formulario__input-container h3 {
+  font-size: 0.9em;
+}
+form .formulario__textarea-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.formulario__textarea-container .label__textarea {
+  position: absolute;
+  font-size: 0.95em;
+  top: -0.6em;
+  left: 0.3em;
+  color: #a2a2a2;
+}
+.formulario__input-container #form__name {
+  width: 21em;
+  height: 4em;
+  border: none;
+  border-bottom: 0.0241em solid #464646;
+  outline: none;
+  margin-bottom: 2em;
+  padding-left: 0.4em;
+}
+.formulario__textarea-container #form__enviarMensaje {
+  width: 21em;
+  height: 10em;
+  resize: none;
+  border: none;
+  border-bottom: 0.0241em solid #464646;
+  outline: none;
+  padding: 1em 0.4em;
+}
+.formulario__textarea-container #form__submit {
+  background-color: #2a7ae4;
+  border: none;
+  width: 9.6em;
+  height: 3.5em;
+  border-radius: 0.2em;
+  color: #ffffff;
+  margin-top: 2em;
+}
+.rodapie {
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0.24em 0;
+  font-size: 0.9em;
+}
+.rodapie .rodapie__autor a {
+  text-decoration: none;
+  color: #464646;
+}
+.rodapie .rodapie__fecha {
+  line-height: 0;
+}
+/* Responsive para celulares medianos */
+@media (min-width: 470px) and (max-width: 690px) {
+  .footer {
+    flex-direction: row;
+  }
+  .footer .informacion__img {
+    width: 8em;
+  }
+  .footer .informacion {
+    align-items: start;
+  }
+  .footer .informacion__img {
+    margin-top: -11em;
+  }
+  .footer .footer__formulario {
+    margin: 5em 0 2em 0;
+    padding: 0.4em;
+  }
+  .formulario__input-container #form__name,
+  .formulario__textarea-container #form__enviarMensaje {
+    width: 16em;
+  }
+}
+/* Responsive intermedio entre pc y laptop */
+@media (min-width: 691px) and (max-width: 720px) {
+  .footer {
+    flex-direction: row;
+  }
+  .footer .footer__formulario {
+    margin-top: 7em;
+  }
+  .footer .informacion__img {
+    margin-top: -11em;
+  }
+  .footer .informacion {
+    align-items: start;
+  }
+  .formulario__input-container #form__name,
+  .formulario__textarea-container #form__enviarMensaje {
+    width: 15em;
+  }
+}
+/* Responsive para PC */
+@media (min-width: 721px) and (max-width: 800px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .formulario__input-container #form__name,
+  .formulario__textarea-container #form__enviarMensaje {
+    width: 24em;
+  }
+  .footer .informacion__img {
+    width: 8em;
+    height: 5em;
+    align-self: flex-start;
+    margin: 4em 1em 0 0;
+  }
+  .footer .informacion {
+    align-items: flex-start !important;
+  }
+  .footer .footer__formulario {
+    margin-top: 4em;
+  }
+}
+@media (min-width: 801px) and (max-width: 1500px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer .footer__formulario {
+    margin-top: 4em;
+  }
+  .formulario__input-container #form__name,
+  .formulario__textarea-container #form__enviarMensaje {
+    width: 30em;
+  }
+  .footer .informacion__img {
+    width: 10em;
+    height: 5em;
+    align-self: flex-start;
+    margin: 6em 2em 0 0;
+  }
+  .informacion .informacion__enlaces {
+    margin-right: 2em;
+  }
+  .footer .informacion {
+    align-items: flex-start;
+  }
+  .rodapie {
+    font-size: 1.09em;
+  }
+}

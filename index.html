@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Alura Geek</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -26,7 +31,7 @@
                             <img src="./assets/img/search-icon.svg" alt="">
                         </span>
                     </div>
-                </div> 
+                </div>
                 <a href="./pages/login.html" id="login">Login</a>
             </div>
         </nav>
@@ -40,12 +45,43 @@
             <a href="./pages/productos.html" class="banner__verConsolas">Ver Consolas</a>
         </div>
     </section>
-
     <section id="cuerpo">
     </section>
 
-    <footer>
+    <section class="footer">
+        <img src="./assets/img/logo.svg" alt="logo de alura geek" class="informacion__img">
+
+        <section class="informacion">
+            <a href="#" class="informacion__enlaces">Quienes somos</a>
+            <a href="#" class="informacion__enlaces">Politica de privacidad</a>
+            <a href="#" class="informacion__enlaces">Programa de fidelidad</a>
+            <a href="#" class="informacion__enlaces">Nuestras tiendas</a>
+            <a href="#" class="informacion__enlaces">Quiero ser franquiciado</a>
+            <a href="#" class="informacion__enlaces">Anúncie aqui</a>
+        </section>
+        <section class="footer__formulario">
+            <form action="">
+                <div class="formulario__input-container">
+                    <h3>Hable con nosotros</h3>
+                    <input type="text" id="form__name">
+                    <label for="form__name" class="label__name">Nombre</label>
+                </div>
+                <div class="formulario__textarea-container">
+                    <textarea id="form__enviarMensaje"></textarea>
+                    <input type="submit" value="Enviar mensaje" id="form__submit">
+                    <label for="form__enviarMensaje" class="label__textarea">Escribe tu mensaje</label>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <footer class="rodapie">
+        <p class="rodapie__autor">Desarrollado por
+            <a href="https://github.com/sebastianDuranC">Sebastian Duran C</a>
+        </p>
+        <p class="rodapie__fecha">2023</p>
     </footer>
 
 </body>
+
 </html>
