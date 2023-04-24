@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/banner.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/producto.css">
     <title>Alura Geek</title>
 </head>
 
@@ -45,24 +46,81 @@
             <a href="./pages/productos.html" class="banner__verConsolas">Ver Consolas</a>
         </div>
     </section>
-    <section id="cuerpo">
-    </section>
 
-    <section class="footer">
+    <main class="productos">
+
+        <section class="productos__starWars">
+            <div class="producto__encabezado">
+                <h3 class="titulo__starWars">Star Wars</h3>
+                <a href="./pages/productos.html" class="enlace__starWars">Ver todo
+                    <img class="enlace__img" src="./assets/img/icono_flecha.svg" alt="icono flecha">
+                </a>
+            </div>
+            <div class="producto__starWars">
+                <div class="card">
+                    <img src="./assets/img/star_wars (3).svg" alt="taza de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/star_wars (4).svg" alt="lego de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/star_wars (5).svg" alt="maestro yoda de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/star_wars (6).svg" alt="soldado de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/star_wars (1).svg" alt="bebe yoda de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/star_wars (2).svg" alt="villano de star wars" class="card__img">
+                    <h4 class="card__titulo">Producto XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="./pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="productos__consolas">
+
+        </section>
+
+        <section class="productos__diversos">
+
+        </section> -->
+
+    </main>
+
+    <article class="footer">
         <img src="./assets/img/logo.svg" alt="logo de alura geek" class="informacion__img">
 
-        <section class="informacion">
+        <div class="informacion">
             <a href="#" class="informacion__enlaces">Quienes somos</a>
             <a href="#" class="informacion__enlaces">Politica de privacidad</a>
             <a href="#" class="informacion__enlaces">Programa de fidelidad</a>
             <a href="#" class="informacion__enlaces">Nuestras tiendas</a>
             <a href="#" class="informacion__enlaces">Quiero ser franquiciado</a>
             <a href="#" class="informacion__enlaces">Anúncie aqui</a>
-        </section>
-        <section class="footer__formulario">
+        </div>
+        <div class="footer__formulario">
             <form action="">
                 <div class="formulario__input-container">
-                    <h3>Hable con nosotros</h3>
+                    <h5>Hable con nosotros</h5>
                     <input type="text" id="form__name">
                     <label for="form__name" class="label__name">Nombre</label>
                 </div>
@@ -72,8 +130,8 @@
                     <label for="form__enviarMensaje" class="label__textarea">Escribe tu mensaje</label>
                 </div>
             </form>
-        </section>
-    </section>
+        </div>
+    </article>
 
     <footer class="rodapie">
         <p class="rodapie__autor">Desarrollado por

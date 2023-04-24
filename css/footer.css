@@ -1,8 +1,3 @@
-#cuerpo {
-  width: 100%;
-  min-height: 1200px;
-  background-color: brown;
-}
 .footer {
   width: 100%;
   background-color: #eaf2fd;
@@ -54,11 +49,11 @@ form .formulario__input-container {
 .formulario__input-container .label__name {
   position: absolute;
   font-size: 0.95em;
-  top: 2.5em;
+  top: 3.5em;
   left: 0.5em;
   color: #a2a2a2;
 }
-.formulario__input-container h3 {
+.formulario__input-container h5 {
   font-size: 0.9em;
 }
 form .formulario__textarea-container {
@@ -206,5 +201,6 @@ form .formulario__textarea-container {
   }
   .rodapie {
     font-size: 1.09em;
+    height: 100px !important;
   }
 }
