@@ -3,39 +3,47 @@
   background-color: #ffffff;
   margin: 0;
 }
-.productos__starWars {
+.productos__starWars,
+.productos__consolas,
+.productos__diversos {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 2em 0;
 }
-.productos__starWars .producto__encabezado {
+.productos__starWars .producto__encabezado,
+.productos__consolas .producto__encabezado,
+.productos__diversos .producto__encabezado {
   width: 90%;
   height: 3.9em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.producto__encabezado .titulo__starWars {
+.producto__encabezado .titulo__starWars,
+.producto__encabezado .titulo__consolas,
+.producto__encabezado .titulo__diversos {
   margin-left: calc(2.1%);
   font-size: 1.9em;
 }
-.producto__encabezado .enlace__starWars {
-  margin-right: calc(2.1%);
-}
-.producto__encabezado .enlace__starWars {
+.producto__encabezado .enlace__starWars,
+.producto__encabezado .enlace__consola,
+.producto__encabezado .enlace__diversos {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   font-size: 1.3em;
   color: #2a7ae4;
+  margin-right: calc(2.1%);
 }
-.enlace__starWars .enlace__img {
+.enlace__starWars .enlace__img, .enlace__consola .enlace__img, .enlace__diversos .enlace__img {
   margin-left: 0.7em;
 }
-.productos__starWars .producto__starWars {
+.productos__starWars .producto__starWars,
+.productos__consolas .producto__consolas,
+.productos__diversos .producto__diversos {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -43,7 +51,9 @@
   flex-wrap: wrap;
   gap: 1.6em;
 }
-.producto__starWars .card {
+.producto__starWars .card,
+.producto__consolas .card,
+.producto__diversos .card {
   flex-basis: 10.5em;
   line-height: 0.4em;
 }
@@ -65,38 +75,52 @@
 }
 /* Pantalla de tablet a pc */
 @media (min-width: 768px) and (max-width: 1100px) {
-  .productos__starWars .card {
+  .productos__starWars .card,
+  .productos__consolas .card,
+  .productos__diversos .card {
     flex-basis: 30%;
   }
   .card .card__img {
     width: 100%;
   }
-  .producto__encabezado .titulo__starWars {
+  .producto__encabezado .titulo__starWars,
+  .producto__encabezado .titulo__consolas,
+  .producto__encabezado .titulo__diversos {
     font-size: 1.2em;
   }
-  .producto__encabezado .enlace__starWars {
+  .producto__encabezado .enlace__starWars,
+  .producto__encabezado .enlace__consola,
+  .producto__encabezado .enlace__diversos {
     font-size: 0.9em;
   }
 }
 /* Pantalla de celular mediano a tablet */
 @media (min-width: 451px) and (max-width: 769px) {
-  .producto__encabezado .titulo__starWars {
+  .producto__encabezado .titulo__starWars,
+  .producto__encabezado .titulo__consolas,
+  .producto__encabezado .titulo__diversos {
     margin-left: calc(9.1%);
     font-size: 1.7em;
   }
-  .producto__encabezado .enlace__starWars {
+  .producto__encabezado .enlace__starWars,
+  .producto__encabezado .enlace__consola,
+  .producto__encabezado .enlace__diversos {
     margin-right: calc(9.1%);
-  }
-  .producto__encabezado .titulo__starWars {
-    font-size: 1.2em;
-  }
-  .producto__encabezado .enlace__starWars {
     font-size: 0.75em;
   }
-  .productos__starWars .producto__starWars {
+  .producto__encabezado .titulo__starWars,
+  .producto__encabezado .titulo__consolas,
+  .producto__encabezado .titulo__diversos {
+    font-size: 1.2em;
+  }
+  .productos__starWars .producto__starWars,
+  .productos__starWars .producto__consolas,
+  .productos__diversos .producto__diversos {
     gap: 1em;
   }
-  .producto__starWars .card {
+  .producto__starWars .card,
+  .producto__consolas .card,
+  .producto__diversos .card {
     flex-basis: 40%;
   }
   .card .card__titulo {
@@ -113,20 +137,26 @@
 }
 /* Pantalla para disposivos pequeños */
 @media (min-width: 0px) and (max-width: 450px) {
-  .producto__encabezado .titulo__starWars {
+  .producto__encabezado .titulo__starWars,
+  .producto__encabezado .titulo__consolas,
+  .producto__encabezado .titulo__diversos {
     margin-left: calc(5.1%);
     font-size: 1.7em;
   }
-  .producto__encabezado .enlace__starWars {
+  .producto__encabezado .enlace__starWars,
+  .producto__encabezado .enlace__consola,
+  .producto__encabezado .enlace__diversos {
     margin-right: calc(5.1%);
-  }
-  .producto__encabezado .titulo__starWars {
-    font-size: 1.1em;
-  }
-  .producto__encabezado .enlace__starWars {
     font-size: 0.8em;
   }
-  .producto__starWars .card {
+  .producto__encabezado .titulo__starWars,
+  .producto__encabezado .titulo__consolas,
+  .producto__encabezado .titulo__diversos {
+    font-size: 1.1em;
+  }
+  .producto__starWars .card,
+  .producto__consolas .card,
+  .producto__diversos .card {
     flex-basis: 90%;
   }
   .card .card__titulo {
@@ -137,14 +167,7 @@
     line-height: 0.5em;
   }
   .card .card__enlace {
-    line-height: 0.5em;
+    line-height: 0.9em;
     font-size: 0.8em;
   }
-}
-
-.productos__consolas {
-  width: 90%;
-  margin: 0 auto;
-  height: 20em;
-  background-color: blueviolet;
 }
