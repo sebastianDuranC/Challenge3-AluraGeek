@@ -11,29 +11,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/banner.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Home - Login</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="nav__tudo">
-                <div class="search">
-                    <h1 class="logo">
-                        <a href="../index.html"> <img src="../assets/img/logo.svg" alt="logo de alura geek" class="logo__img"></a>
-                    </h1>
-                    <div class="nav__search">
-                        <input type="text" class="search__input" placeholder="¿Qué deseas buscar?">
-                        <span class="search__icon">
-                            <img src="../assets/img/search-icon.svg" alt="">
-                        </span>
-                    </div>
-                </div>
+                <h1><a href="../index.html"><img class="nav__logo" src="../assets/img/logo.svg" alt="logo de alura geek"></a></h1>
+                <span class="nav__busqueda">
+                    <input class="nav__input" type="text" placeholder="¿Que desea buscar?">
+                    <img class="nav__search" src="../assets/img/lupa-pc.svg" alt="lupa para pc y tablet">
+                </span>
             </div>
+            <img class="nav__search-movil" src="../assets/img/lupa-movil.svg" alt="lupa para movil">
         </nav>
     </header>
     
@@ -77,7 +70,7 @@
 
     <footer class="rodapie">
         <p class="rodapie__autor">Desarrollado por
-            <a href="https://github.com/sebastianDuranC">Sebastian Duran C</a>
+            <a href="https://github.com/sebastianDuranC"><img class="rodapie__logo" src="../assets/img/logo-github.svg" alt="logo de github">Sebastian Duran Caballero</a>
         </p>
         <p class="rodapie__fecha">2023</p>
     </footer>

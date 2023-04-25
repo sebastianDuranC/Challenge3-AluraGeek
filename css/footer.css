@@ -107,6 +107,10 @@ form .formulario__textarea-container {
   text-decoration: none;
   color: #464646;
 }
+.rodapie__autor .rodapie__logo{
+  margin: 0 0.35em;
+  width: 1em;
+}
 .rodapie .rodapie__fecha {
   line-height: 0;
 }
