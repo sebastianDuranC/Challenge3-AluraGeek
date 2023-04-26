@@ -38,7 +38,9 @@
   color: #2a7ae4;
   margin-right: calc(2.1%);
 }
-.enlace__starWars .enlace__img, .enlace__consola .enlace__img, .enlace__diversos .enlace__img {
+.enlace__starWars .enlace__img,
+.enlace__consola .enlace__img,
+.enlace__diversos .enlace__img {
   margin-left: 0.7em;
 }
 .productos__starWars .producto__starWars,

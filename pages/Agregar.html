@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/agregar-productos.css">
+    <title>Agregar productos</title>
 </head>
+
 <body>
     
+    <header>
+        <nav class="nav">
+            <div class="nav__tudo">
+                <h1><a href="../index.html"><img class="nav__logo" src="../assets/img/logo.svg"
+                            alt="logo de alura geek"></a></h1>
+                <span class="nav__busqueda">
+                    <input class="nav__input" type="text" placeholder="¿Que desea buscar?">
+                    <img class="nav__search" src="../assets/img/lupa-pc.svg" alt="lupa para pc y tablet">
+                </span>
+            </div>
+            <a href="../pages/login.html" id="nav__login">Menu Administrador</a>
+            <img class="nav__search-movil" src="../assets/img/lupa-movil.svg" alt="lupa para movil">
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__formulario">
+            <form action="" class="formulario">
+                <h2 class="formulario__titulo">Agregar nuevo producto</h2>
+                <input class="formulario__url" type="url" required placeholder="URL de la imagen">
+                <input class="formulario__categoria" type="text" name="" id="" placeholder="Categoria">
+                <input class="formulario__nombreProducto" type="text" name="" id="" placeholder="Nombre del producto">
+                <input class="formulario__precio" type="text" placeholder="Precio del producto">
+                <textarea class="formulario__descripcionProducto" name="" id="" placeholder="Descripcion del producto"></textarea>
+                <input class="formulario__agregarProducto" type="submit" value="Agregar producto">
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodapie">
+        <p class="rodapie__autor">Desarrollado por
+            <a href="https://github.com/sebastianDuranC"><img class="rodapie__logo" src="../assets/img/logo-github.svg"
+                    alt="logo de github">Sebastian Duran Caballero</a>
+        </p>
+        <p class="rodapie__fecha">2023</p>
+    </footer>
+
 </body>
+
 </html>
