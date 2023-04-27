@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="..//css/descripcion-producto.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Producto</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <nav class="nav">
+            <div class="nav__tudo">
+                <h1><a href="../index.html"><img class="nav__logo" src="../assets/img/logo.svg"
+                            alt="logo de alura geek"></a></h1>
+                <span class="nav__busqueda">
+                    <input class="nav__input" type="text" placeholder="¿Que desea buscar?">
+                    <img class="nav__search" src="../assets/img/lupa-pc.svg" alt="lupa para pc y tablet">
+                </span>
+            </div>
+            <img class="nav__search-movil" src="../assets/img/lupa-movil.svg" alt="lupa para movil">
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="producto">
+            <div class="producto__container">
+                <img class="producto__img" src="../assets/img/star_wars (3).svg" alt="taza de star wars">
+                <div class="producto__contenido">
+                    <h2 class="producto__titulo">Producto XYZ</h2>
+                    <h3 class="producto__precio">$ 60,00</h3>
+                    <p class="producto__descripcion">Voluptas voluptatum quibusdam similique, class debitis alias
+                        maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse
+                        distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste
+                        recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,
+                        dolorum do. Animi porta anim magnam
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="productos__consolas">
+            <div class="producto__encabezado">
+                <h3 class="titulo__consolas">Producto similares</h3>
+            </div>
+            <div class="producto__consolas">
+                <div class="card">
+                    <img src="../assets/img/consolas (1).svg" alt="control de xbox" class="card__img">
+                    <h4 class="card__titulo">Control XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/consolas (2).svg" alt="control y consola de play station" class="card__img">
+                    <h4 class="card__titulo">Control y consola XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/consolas (4).svg" alt="consola retro" class="card__img">
+                    <h4 class="card__titulo">Consola XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/consolas (3).svg" alt="controles de nintendo" class="card__img">
+                    <h4 class="card__titulo">Control XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/consolas (6).svg" alt="consola de xbox" class="card__img">
+                    <h4 class="card__titulo">Consola XYZ</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/consolas (5).svg" alt="game boy clasico" class="card__img">
+                    <h4 class="card__titulo">Game Boy Color</h4>
+                    <p class="card__precio">$ 60,00</p>
+                    <a href="../pages/producto.html" class="card__enlace">Ver producto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <article class="footer">
+        <img src="../assets/img/logo.svg" alt="logo de alura geek" class="informacion__img">
+
+        <div class="informacion">
+            <a href="#" class="informacion__enlaces">Quienes somos</a>
+            <a href="#" class="informacion__enlaces">Politica de privacidad</a>
+            <a href="#" class="informacion__enlaces">Programa de fidelidad</a>
+            <a href="#" class="informacion__enlaces">Nuestras tiendas</a>
+            <a href="#" class="informacion__enlaces">Quiero ser franquiciado</a>
+            <a href="#" class="informacion__enlaces">Anúncie aqui</a>
+        </div>
+        <div class="footer__formulario">
+            <form action="">
+                <div class="formulario__input-container">
+                    <h5>Hable con nosotros</h5>
+                    <input type="text" id="form__name">
+                    <label for="form__name" class="label__name">Nombre</label>
+                </div>
+                <div class="formulario__textarea-container">
+                    <textarea id="form__enviarMensaje"></textarea>
+                    <input type="submit" value="Enviar mensaje" id="form__submit">
+                    <label for="form__enviarMensaje" class="label__textarea">Escribe tu mensaje</label>
+                </div>
+            </form>
+        </div>
+    </article>
+
+    <footer class="rodapie">
+        <p class="rodapie__autor">Desarrollado por
+            <a href="https://github.com/sebastianDuranC"><img class="rodapie__logo" src="../assets/img/logo-github.svg"
+                    alt="logo de github">Sebastian Duran Caballero</a>
+        </p>
+        <p class="rodapie__fecha">2023</p>
+    </footer>
 </body>
+
 </html>
