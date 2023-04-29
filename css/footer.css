@@ -6,20 +6,20 @@
   justify-content: center;
   align-items: center;
 }
-.footer .informacion__img {
+.footer .footer__img {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2em;
   width: 10em;
 }
-.footer .informacion {
+.footer .footer__informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.informacion .informacion__enlaces {
+.footer__informacion .informacion__enlaces {
   text-decoration: none;
   color: #464646;
   margin: 0.5em 0.5em;
@@ -119,13 +119,13 @@ form .formulario__textarea-container {
   .footer {
     flex-direction: row;
   }
-  .footer .informacion__img {
+  .footer .footer__img {
     width: 8em;
   }
-  .footer .informacion {
+  .footer .footer__informacion {
     align-items: start;
   }
-  .footer .informacion__img {
+  .footer .footer__img {
     margin-top: -11em;
   }
   .footer .footer__formulario {
@@ -145,10 +145,10 @@ form .formulario__textarea-container {
   .footer .footer__formulario {
     margin-top: 7em;
   }
-  .footer .informacion__img {
+  .footer .footer__img {
     margin-top: -11em;
   }
-  .footer .informacion {
+  .footer .footer__informacion {
     align-items: start;
   }
   .formulario__input-container #form__name,
@@ -166,13 +166,13 @@ form .formulario__textarea-container {
   .formulario__textarea-container #form__enviarMensaje {
     width: 24em;
   }
-  .footer .informacion__img {
+  .footer .footer__img {
     width: 8em;
     height: 5em;
     align-self: flex-start;
     margin: 4em 1em 0 0;
   }
-  .footer .informacion {
+  .footer .footer__informacion {
     align-items: flex-start !important;
   }
   .footer .footer__formulario {
@@ -191,16 +191,16 @@ form .formulario__textarea-container {
   .formulario__textarea-container #form__enviarMensaje {
     width: 30em;
   }
-  .footer .informacion__img {
+  .footer .footer__img {
     width: 10em;
     height: 5em;
     align-self: flex-start;
     margin: 6em 2em 0 0;
   }
-  .informacion .informacion__enlaces {
+  .footer__informacion .informacion__enlaces {
     margin-right: 2em;
   }
-  .footer .informacion {
+  .footer .footer__informacion {
     align-items: flex-start;
   }
   .rodapie {

@@ -1,7 +1,7 @@
-.main{
+.agregar{
     width: 100%;
 }
-.main .producto{
+.agregar .producto{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@
     line-height: 1.3em;
     width: 100%;
 }
-.producto__starWars{
+.producto__uno{
     width: 20%;
 }
 @media (min-width: 768px) and (max-width: 1100px){

@@ -17,16 +17,16 @@
   font-size: 0.8em;
   vertical-align: middle;
 }
-.main {
+.agregar {
   width: 100%;
 }
-.main .main__formulario {
+.agregar .agregar__formulario {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__formulario .formulario {
+.agregar__formulario .formulario {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@
   .formulario .formulario__titulo {
     font-size: 1.2em;
   }
-  .main__formulario .formulario {
+  .agregar__formulario .formulario {
     width: 70%;
   }
   .formulario .formulario__url,
@@ -109,10 +109,10 @@
   .formulario .formulario__titulo {
     font-size: 0.99em;
   }
-  .main__formulario .formulario {
+  .agregar__formulario .formulario {
     width: 80%;
   }
-  .main{
+  .agregar{
     margin: 2em 0;
   }
   .formulario .formulario__url,
